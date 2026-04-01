@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>jaimin maru</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@200;300;400&family=Caveat:wght@400;600&display=swap" rel="stylesheet"/>
+
+<!--
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║                     WEBSITE CONTENT EDITOR                       ║
+║                                                                  ║
+║  Edit the fields below to update your website.                   ║
+║  Rules:                                                          ║
+║    · Change only the text AFTER the colon on each line           ║
+║    · Keep text inside the quote marks " "                        ║
+║    · For images: use the path  images/yourfile.jpg               ║
+║    · For links: use the full URL  https://...                    ║
+║    · Don't delete any commas, quotes or brackets                 ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+-->
+<script>
+var CONFIG = {
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  YOUR IDENTITY                                               │
+   └────────────────────────────────────────────────────────────── */
+
+  name:      "jaimin maru",
+  tagline:   "Actor · Producer · Director · Dancer",
+  location:  "Los Angeles, California",
+  from:      "Gujarat, India",
+  craft:     "Acting · Directing · Producing · Dance",
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  CONTACT DETAILS                                             │
+   └────────────────────────────────────────────────────────────── */
+
+  email:     "hello@jaiminmaru.com",
+  instagram: "@jaiminmaru",
+  imdb:      "Jaimin Maru",
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  SOCIAL LINKS  (paste full URLs)                             │
+   └────────────────────────────────────────────────────────────── */
+
+  links: {
+    instagram: "#",
+    imdb:      "#",
+    youtube:   "#",
+    linkedin:  "#"
+  },
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  PHOTOS  (format: "images/filename.jpg")                     │
+   └────────────────────────────────────────────────────────────── */
+
+  heroPhoto:  "",
+  aboutPhoto: "",
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  BIO TEXT                                                    │
+   │  "all"      shows when no tab is selected                    │
+   │  "actor"    shows when Actor tab is clicked  (etc.)          │
+   └────────────────────────────────────────────────────────────── */
+
+  bio: {
+    all: [
+      "Born in the vibrant land of Gujarat, India, Jaimin Maru carries with him a deep connection to the stories, rhythms, and artistry of his heritage — and channels them into every performance, production, and step on stage.",
+      "Now based in Los Angeles, he moves fluidly across acting, directing, producing, and dance — weaving the classical and the contemporary, the intimate and the cinematic."
+    ],
+    actor:    "Jaimin\'s work as an actor is rooted in emotional truth and physical precision. Trained across classical and contemporary traditions, he brings a rare specificity to every character — drawing on both the storytelling traditions of Gujarat and the raw intensity of the LA screen acting world.",
+    director: "As a director, Jaimin is drawn to stories that live in the space between cultures. His visual language is intimate and cinematic — long silences, expressive faces, and landscapes that carry memory.",
+    producer: "Jaimin approaches producing as an act of creative guardianship — protecting the story at every stage. From development through post, he brings both the strategic mind and the artist\'s instinct.",
+    dancer:   "Dance was Jaimin\'s first language. Trained in classical Indian dance forms from childhood in Gujarat, his movement vocabulary bridges the traditional and the contemporary."
+  },
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  SHOWREEL LINK  (YouTube or Vimeo URL)                       │
+   └────────────────────────────────────────────────────────────── */
+
+  showreelUrl: "#",
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  GALLERY PHOTOS  (up to 9 — format: "images/filename.jpg")   │
+   └────────────────────────────────────────────────────────────── */
+
+  gallery: [
+    "",   /* Photo 1 */
+    "",   /* Photo 2 */
+    "",   /* Photo 3 */
+    "",   /* Photo 4 */
+    "",   /* Photo 5 */
+    "",   /* Photo 6 */
+    "",   /* Photo 7 */
+    "",   /* Photo 8 */
+    ""    /* Photo 9 */
+  ],
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  PROJECTS                                                    │
+   │                                                              │
+   │  Each project block controls one card + detail page.        │
+   │  Duplicate a block to add more projects.                     │
+   │                                                              │
+   │  discipline  = "actor" | "director" | "producer" | "dancer" │
+   │  awards      = list items inside [ ] separated by commas     │
+   │  stills      = up to 6 image paths inside [ ]               │
+   │  stillCaptions = handwritten labels under each polaroid      │
+   └────────────────────────────────────────────────────────────── */
+
+  projects: [
+
+    /* ── PROJECT 1 ─────────────────────────────────────────── */
+    {
+      image:         "",
+      discipline:    "actor",
+      category:      "Acting",
+      title:         "Between the Lines",
+      year:          "2024",
+      backStory:     "Three weeks in the desert, no mirrors on set. The director wanted us to forget what we looked like. It worked.",
+      role:          "Actor, Producer",
+      director:      "Taytum Blake",
+      producer:      "Jaimin Maru",
+      logline:       "Add your logline here.",
+      synopsis:      "Add your synopsis here.",
+      awards:        [],
+      stills:        ["", "", "", "", "", ""],
+      stillCaptions: ["day one", "on set", "behind the lens", "wrap day", "the cast", "a moment"],
+      trailerUrl:    "",
+      imdbUrl:       "https://pro.imdb.com/title/tt32361962/?ref_=nmovr_c_1"
+    },
+
+    /* ── PROJECT 2 ─────────────────────────────────────────── */
+    {
+      image:         "",
+      discipline:    "director",
+      category:      "Direction",
+      title:         "Short Film Title",
+      year:          "2023",
+      backStory:     "Shot in one day, one location, one idea. Sometimes constraints are the most honest collaborator you\'ll ever have.",
+      role:          "Director",
+      director:      "Jaimin Maru",
+      producer:      "Producer Name",
+      logline:       "Add your logline here.",
+      synopsis:      "Add your synopsis here.",
+      awards:        [],
+      stills:        ["", "", "", "", "", ""],
+      stillCaptions: ["day one", "on set", "behind the lens", "wrap day", "the cast", "a moment"],
+      trailerUrl:    "",
+      imdbUrl:       ""
+    },
+
+    /* ── PROJECT 3 ─────────────────────────────────────────── */
+    {
+      image:         "",
+      discipline:    "dancer",
+      category:      "Dance",
+      title:         "Stage Performance",
+      year:          "2023",
+      backStory:     "My grandmother taught me this form in her kitchen. This was the first time I performed it on a proper stage. She was in the front row.",
+      role:          "Performer · Choreographer",
+      director:      "Choreographer Name",
+      producer:      "Venue · Organization",
+      logline:       "Add your logline here.",
+      synopsis:      "Add your synopsis here.",
+      awards:        [],
+      stills:        ["", "", "", "", "", ""],
+      stillCaptions: ["day one", "on set", "behind the lens", "wrap day", "the cast", "a moment"],
+      trailerUrl:    "",
+      imdbUrl:       ""
+    },
+
+    /* ── PROJECT 4 ─────────────────────────────────────────── */
+    {
+      image:         "",
+      discipline:    "producer",
+      category:      "Production",
+      title:         "Web Series Title",
+      year:          "2022",
+      backStory:     "We had no budget and a lot of belief. Turned out belief was the more important resource. Made six episodes in twelve days.",
+      role:          "Producer",
+      director:      "Director Name",
+      producer:      "Jaimin Maru",
+      logline:       "Add your logline here.",
+      synopsis:      "Add your synopsis here.",
+      awards:        [],
+      stills:        ["", "", "", "", "", ""],
+      stillCaptions: ["day one", "on set", "behind the lens", "wrap day", "the cast", "a moment"],
+      trailerUrl:    "",
+      imdbUrl:       ""
+    }
+
+  ],
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  DIRECTOR'S COMMENTARY                                       │
+   │  The handwritten note at the bottom of the page.             │
+   │  Use \n\n between paragraphs.                               │
+   └────────────────────────────────────────────────────────────── */
+
+  commentary:    "If you\'ve scrolled this far, I think you\'re the kind of person I\'d want to work with.\n\nI didn\'t build this site to impress anyone. I built it to be honest.\n\nI\'m from a small town in Gujarat where nobody made films — so I became someone who does. I moved to Los Angeles with one suitcase and a lot of stories I needed to tell.\n\nEvery role, every frame, every step I choreograph is trying to say the same thing: we are not so different, you and I.\n\nIf that resonates — let\'s make something together.",
+  commentarySig: "— Jaimin",
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  CONTACT SECTION INTRO TEXT                                  │
+   └────────────────────────────────────────────────────────────── */
+
+  contactIntro: "Whether you\'re looking to collaborate on a film, a performance, or a production — Jaimin is always open to meaningful creative conversations.",
+
+/* ┌──────────────────────────────────────────────────────────────┐
+   │  COPYRIGHT YEAR                                              │
+   └────────────────────────────────────────────────────────────── */
+
+  copyrightYear: "2026"
+
+};
+/*
+╔══════════════════════════════════════════════════════════════════╗
+║         END OF EDITABLE CONTENT — DO NOT EDIT BELOW             ║
+╚══════════════════════════════════════════════════════════════════╝
+*/
+</script>
+
+
+  <style>
+    :root{--bg:#F8F7F4;--bg2:#ECEAE4;--bg3:#E0DDD5;--text:#181818;--accent:#3D6B5E;--hover:#52897A;--muted:#7A8A85;--thin:rgba(61,107,94,0.15);}
+    body.night{--bg:#111410;--bg2:#1A1D18;--bg3:#222820;--text:#E8EDE8;--accent:#6AAF9A;--hover:#85C4B0;--muted:#7A9A8A;--thin:rgba(106,175,154,0.18);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:auto;}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .6s,color .6s;}
+
+    /* MOOD */
+    #mood{position:fixed;bottom:2rem;right:2rem;z-index:800;width:48px;height:48px;border-radius:50%;border:1px solid var(--thin);background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:background .3s,transform .2s;box-shadow:0 2px 12px rgba(0,0,0,.08);}
+    #mood:hover{transform:scale(1.1);}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:500;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 2.5rem;height:58px;background:rgba(248,247,244,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--thin);transition:background .6s,border-color .6s;}
+    body.night nav{background:rgba(17,20,16,.94);}
+    .nav-left{display:flex;gap:2rem;align-items:center;justify-content:flex-end;}
+    .nav-center{text-align:center;padding:0 2rem;}
+    .nav-center a{font-family:'EB Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:.02em;color:var(--text);text-decoration:none;transition:color .2s;}
+    .nav-center a:hover{color:var(--accent);}
+    .nav-right{display:flex;gap:2rem;align-items:center;justify-content:flex-start;}
+    .nav-left a,.nav-right a{font-size:.75rem;font-weight:300;letter-spacing:.08em;color:var(--muted);text-decoration:none;transition:color .2s;}
+    .nav-left a:hover,.nav-right a:hover{color:var(--accent);}
+
+    #prog{position:fixed;top:58px;left:0;height:2px;width:0%;background:var(--accent);z-index:600;}
+
+    /* HERO */
+    #hero-wrap{margin-top:58px;position:relative;height:250vh;}
+    #hero-sticky{position:sticky;top:0;height:calc(100vh - 58px);overflow:hidden;display:flex;flex-direction:column;}
+    .hero-photo{flex:1;overflow:hidden;position:relative;}
+    .hero-photo-inner{position:absolute;inset:-5%;background:#c5c8c4;background-size:cover;background-position:center top;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;transition:filter .8s;}
+    body.night .hero-photo-inner{filter:brightness(.5) saturate(.6) hue-rotate(160deg);}
+    .hero-placeholder{display:flex;flex-direction:column;align-items:center;gap:1rem;color:rgba(0,0,0,.28);}
+    .hero-placeholder svg{opacity:.25;}
+    .hero-placeholder p{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;}
+    #disc-tint{position:absolute;inset:0;opacity:0;transition:opacity .5s,background .5s;pointer-events:none;}
+    #scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;}
+    #scroll-hint span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,0,0,.32);font-weight:300;}
+    body.night #scroll-hint span{color:rgba(255,255,255,.32);}
+    .s-mouse{width:22px;height:34px;border:1.5px solid rgba(0,0,0,.25);border-radius:12px;display:flex;justify-content:center;padding-top:5px;}
+    body.night .s-mouse{border-color:rgba(255,255,255,.25);}
+    .s-dot{width:3px;height:6px;background:rgba(0,0,0,.32);border-radius:2px;animation:bounce 1.6s ease-in-out infinite;}
+    body.night .s-dot{background:rgba(255,255,255,.32);}
+    @keyframes bounce{0%{transform:translateY(0);opacity:1;}60%{transform:translateY(10px);opacity:0;}61%{transform:translateY(0);opacity:0;}100%{opacity:1;}}
+    .hero-name-block{text-align:center;padding:2rem 1rem 1.5rem;border-top:1px solid var(--thin);background:var(--bg);will-change:transform,opacity;transition:background .6s,border-color .6s;}
+    .hero-name-block h1{font-family:'EB Garamond',serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:400;letter-spacing:.01em;color:var(--text);line-height:1.1;}
+    .hero-name-block h1 em{font-style:italic;color:var(--accent);}
+    .hero-tagline{margin-top:.6rem;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:300;}
+
+    /* DISCIPLINE SWITCHER */
+    #disc-switcher{background:var(--bg2);border-top:1px solid var(--thin);border-bottom:1px solid var(--thin);display:flex;justify-content:center;transition:background .6s;}
+    .disc-btn{padding:1rem 2.5rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:300;color:var(--muted);background:transparent;border:none;cursor:pointer;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;font-family:'DM Sans',sans-serif;}
+    .disc-btn:hover{color:var(--accent);}
+    .disc-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
+    .disc-panel{display:none;}
+    .disc-panel.active{display:block;}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);}
+    .reveal.from-left{transform:translateX(-50px);}
+    .reveal.scale-up{transform:scale(.94);}
+    .reveal.visible{opacity:1;transform:none;}
+    .d1{transition-delay:.1s;}.d2{transition-delay:.22s;}.d3{transition-delay:.34s;}.d4{transition-delay:.46s;}
+
+    /* SECTIONS */
+    .wrap{max-width:1080px;margin:0 auto;padding:0 3rem;}
+    .eyebrow{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:300;display:block;margin-bottom:1.6rem;}
+    .heading{font-family:'EB Garamond',serif;font-size:clamp(2rem,4.5vw,3.4rem);font-weight:400;line-height:1.1;color:var(--text);margin-bottom:3rem;}
+    .heading em{font-style:italic;color:var(--accent);}
+
+    /* ABOUT */
+    #about{background:var(--bg);border-top:1px solid var(--thin);padding:7rem 3rem;transition:background .6s,border-color .6s;}
+    .about-layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:2fr 3fr;gap:6rem;align-items:start;}
+    .about-img-box{width:100%;aspect-ratio:3/4;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;color:var(--muted);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;border:1px solid var(--thin);background-size:cover;background-position:center top;transition:background .6s,border-color .6s;}
+    .about-img-box svg{opacity:.28;}
+    .about-caption{margin-top:.9rem;font-size:.65rem;letter-spacing:.1em;color:var(--muted);text-align:center;}
+    .about-body p{font-size:1.02rem;line-height:1.88;color:var(--muted);font-weight:300;margin-bottom:1.4rem;}
+    .rule{width:28px;height:1px;background:var(--accent);opacity:.45;margin:2.2rem 0;}
+    .meta{display:flex;flex-direction:column;gap:1rem;}
+    .meta-row{display:flex;align-items:baseline;gap:1rem;}
+    .meta-k{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);min-width:76px;}
+    .meta-v{font-family:'EB Garamond',serif;font-size:1rem;color:var(--text);}
+
+    /* PORTFOLIO */
+    #portfolio{background:var(--bg2);border-top:1px solid var(--thin);padding:6rem 0 0;transition:background .6s,border-color .6s;}
+    .p-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:1rem;}
+    .p-card-wrap{cursor:pointer;}
+    .flip-card{aspect-ratio:4/3;perspective:1200px;}
+    .flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.4,.2,.2,1);}
+    .p-card-wrap:hover .flip-inner{transform:rotateY(180deg);}
+    .flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;}
+    .flip-front{background:var(--bg3);display:flex;align-items:center;justify-content:center;overflow:hidden;background-size:cover;background-position:center;}
+    .flip-front-ph{display:flex;flex-direction:column;align-items:center;gap:.8rem;color:var(--muted);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;}
+    .flip-front-ph svg{opacity:.25;}
+    .flip-back{background:var(--accent);transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:center;padding:2rem;}
+    body.night .flip-back{background:var(--bg3);border:1px solid var(--thin);}
+    .fb-tag{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(248,247,244,.6);margin-bottom:.6rem;}
+    body.night .fb-tag{color:var(--muted);}
+    .fb-title{font-family:'EB Garamond',serif;font-size:1.5rem;color:#F8F7F4;margin-bottom:.8rem;}
+    body.night .fb-title{color:var(--text);}
+    .fb-story{font-size:.85rem;line-height:1.7;color:rgba(248,247,244,.82);font-weight:300;}
+    body.night .fb-story{color:var(--muted);}
+    .fb-year{margin-top:1.2rem;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(248,247,244,.45);}
+    .p-card-info{padding:1.4rem 1.8rem 1.6rem;background:var(--bg);border-right:1px solid var(--thin);border-bottom:1px solid var(--thin);transition:background .6s;}
+    .p-cat{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.35rem;}
+    .p-title{font-family:'EB Garamond',serif;font-size:1.25rem;color:var(--text);}
+    .p-year{font-size:.68rem;color:var(--muted);margin-top:.25rem;}
+    .view-link{font-size:.62rem;letter-spacing:.14em;color:var(--accent);margin-top:.5rem;font-weight:300;transition:letter-spacing .2s;}
+    .p-card-wrap:hover .view-link{letter-spacing:.2em;}
+
+    /* SHOWREEL */
+    .showreel-bar{margin-top:4rem;padding:2.8rem 3rem;background:var(--accent);display:flex;align-items:center;justify-content:space-between;text-decoration:none;transition:background .2s;}
+    .showreel-bar:hover{background:var(--hover);}
+    .sr-l{display:flex;align-items:center;gap:2rem;}
+    .play-circle{width:50px;height:50px;border-radius:50%;border:1px solid rgba(248,247,244,.5);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .play-circle::after{content:'';border-left:13px solid #F8F7F4;border-top:7.5px solid transparent;border-bottom:7.5px solid transparent;margin-left:4px;}
+    .sr-txt{display:flex;flex-direction:column;gap:.25rem;}
+    .sr-txt span:first-child{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(248,247,244,.6);}
+    .sr-txt span:last-child{font-family:'EB Garamond',serif;font-size:1.55rem;color:#F8F7F4;}
+    .sr-arr{font-family:'EB Garamond',serif;font-size:2rem;color:rgba(248,247,244,.6);transition:transform .2s;}
+    .showreel-bar:hover .sr-arr{transform:translateX(6px);}
+
+    /* GALLERY */
+    #gallery{background:var(--bg);border-top:1px solid var(--thin);padding:6rem 3rem;transition:background .6s,border-color .6s;}
+    .masonry{columns:3;column-gap:.8rem;margin-top:.5rem;}
+    .g-item{break-inside:avoid;margin-bottom:.8rem;overflow:hidden;background:var(--bg2);cursor:pointer;border:1px solid var(--thin);}
+    .g-ph{width:100%;display:flex;align-items:center;justify-content:center;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);background-size:cover;background-position:center;transition:transform .5s cubic-bezier(.25,.46,.45,.94);}
+    .g-item:hover .g-ph{transform:scale(1.04);}
+    .g-ph.tall{height:340px;}.g-ph.med{height:220px;}.g-ph.short{height:165px;}
+
+    /* CONTACT */
+    #contact{background:var(--bg2);border-top:1px solid var(--thin);padding:6rem 3rem;transition:background .6s,border-color .6s;}
+    .contact-layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:5fr 4fr;gap:6rem;align-items:start;}
+    .contact-left p{font-size:1rem;line-height:1.85;color:var(--muted);font-weight:300;margin-bottom:2.5rem;max-width:400px;}
+    .c-links{display:flex;flex-direction:column;}
+    .c-row{display:flex;align-items:baseline;gap:1.2rem;padding:.9rem 0;border-bottom:1px solid var(--thin);text-decoration:none;color:var(--text);transition:color .2s;}
+    .c-row:hover{color:var(--accent);}
+    .c-key{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);min-width:68px;}
+    .c-val{font-family:'EB Garamond',serif;font-size:1rem;}
+    .contact-form{display:flex;flex-direction:column;gap:1.6rem;}
+    .f-field{display:flex;flex-direction:column;gap:.45rem;}
+    .f-field label{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:300;}
+    .f-field input,.f-field textarea{background:transparent;border:none;border-bottom:1px solid rgba(61,107,94,.28);padding:.6rem 0;font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:300;color:var(--text);outline:none;transition:border-color .2s;resize:none;width:100%;}
+    .f-field input:focus,.f-field textarea:focus{border-color:var(--accent);}
+    .btn{align-self:flex-start;background:var(--accent);color:var(--bg);border:none;padding:.85rem 2.2rem;font-family:'DM Sans',sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;font-weight:300;transition:background .2s;}
+    .btn:hover{background:var(--hover);}
+
+    /* COMMENTARY */
+    #commentary{background:var(--text);padding:8rem 3rem 6rem;position:relative;overflow:hidden;transition:background .6s;}
+    .commentary-inner{max-width:720px;margin:0 auto;position:relative;}
+    .commentary-label{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:3rem;display:block;}
+    .commentary-note{font-family:'Caveat',cursive;font-size:clamp(1.5rem,3.5vw,2.2rem);line-height:1.7;color:var(--bg);transform:rotate(-1.2deg);display:block;white-space:pre-line;}
+    .commentary-sig{margin-top:2.5rem;font-family:'Caveat',cursive;font-size:1.5rem;color:var(--accent);transform:rotate(-1deg);display:block;}
+    #commentary::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(transparent,transparent 39px,rgba(61,107,94,.06) 39px,rgba(61,107,94,.06) 40px);pointer-events:none;}
+
+    /* FOOTER */
+    footer{background:var(--bg3);border-top:1px solid var(--thin);padding:2.2rem 3rem;display:flex;justify-content:space-between;align-items:center;transition:background .6s,border-color .6s;}
+    .f-name{font-family:'EB Garamond',serif;font-size:1rem;color:var(--text);text-decoration:none;transition:color .2s;}
+    .f-name:hover{color:var(--accent);}
+    .f-copy{font-size:.62rem;letter-spacing:.08em;color:var(--muted);}
+    .f-social{display:flex;gap:1.8rem;}
+    .f-social a{font-size:.62rem;letter-spacing:.1em;color:var(--accent);text-decoration:none;transition:color .2s;}
+    .f-social a:hover{color:var(--hover);}
+
+    /* =====================================================
+       PROJECT OVERLAY
+    ===================================================== */
+
+    /* Typewriter screen */
+    #tw-screen{
+      position:fixed;inset:0;z-index:2000;
+      background:var(--bg);
+      display:none;flex-direction:column;
+      align-items:center;justify-content:center;
+      opacity:0;transition:opacity .5s ease;
+    }
+    #tw-screen.active{display:flex;}
+    #tw-screen.visible{opacity:1;}
+    #tw-screen.fade-out{opacity:0;}
+    #tw-wordmark{font-family:'EB Garamond',serif;font-size:1rem;font-weight:400;letter-spacing:.06em;color:var(--muted);position:absolute;top:2rem;left:50%;transform:translateX(-50%);white-space:nowrap;}
+    #tw-box{width:min(680px,88vw);text-align:center;padding:2rem;}
+    .tw-eyebrow{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:300;margin-bottom:2rem;display:block;opacity:0;animation:twFade .6s .2s forwards;}
+    #tw-title{font-family:'EB Garamond',serif;font-size:clamp(2.8rem,7vw,6rem);font-weight:400;color:var(--text);line-height:1.05;letter-spacing:-.01em;min-height:1.1em;}
+    #tw-cursor{display:inline-block;width:2px;height:.85em;background:var(--accent);vertical-align:middle;margin-left:3px;animation:twBlink .85s step-end infinite;}
+    @keyframes twBlink{0%,100%{opacity:1;}50%{opacity:0;}}
+    @keyframes twFade{from{opacity:0;}to{opacity:1;}}
+    #tw-sub{margin-top:1.4rem;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:300;opacity:0;transition:opacity .8s ease;}
+    #tw-sub.show{opacity:1;}
+    #tw-progress{position:absolute;bottom:0;left:0;height:1px;background:var(--accent);width:0%;transition:width .1s linear;}
+    .tw-skip{position:absolute;bottom:2rem;right:2rem;font-family:'DM Sans',sans-serif;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);opacity:.5;cursor:pointer;border:none;background:transparent;transition:opacity .2s;}
+    .tw-skip:hover{opacity:1;}
+
+    /* Project detail page */
+    #project-overlay{
+      position:fixed;inset:0;z-index:1900;
+      background:var(--bg);
+      overflow-y:auto;
+      display:none;opacity:0;
+      transition:opacity .6s ease;
+    }
+    #project-overlay.active{display:block;}
+    #project-overlay.visible{opacity:1;}
+
+    /* Project hero */
+    .proj-hero{width:100%;height:65vh;background:var(--bg2);background-size:cover;background-position:center;display:flex;align-items:flex-end;position:relative;overflow:hidden;}
+    .proj-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.62) 0%,transparent 65%);}
+    .proj-hero-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:rgba(0,0,0,.22);}
+    .proj-hero-ph svg{opacity:.2;}
+    .proj-hero-ph p{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;}
+    .proj-hero-title{position:relative;z-index:2;padding:0 3rem 2.5rem;width:100%;}
+    .proj-hero-cat{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:300;display:block;margin-bottom:.6rem;}
+    .proj-hero-name{font-family:'EB Garamond',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:400;color:#fff;line-height:1;}
+    .proj-hero-name em{font-style:italic;color:rgba(255,255,255,.65);}
+
+    /* Project nav bar */
+    .proj-nav{position:sticky;top:0;z-index:100;height:58px;background:rgba(248,247,244,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--thin);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;transition:background .6s;}
+    body.night .proj-nav{background:rgba(17,20,16,.95);}
+    .proj-nav-back{font-size:.72rem;font-weight:300;letter-spacing:.08em;color:var(--muted);text-decoration:none;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif;transition:color .2s;}
+    .proj-nav-back:hover{color:var(--accent);}
+    .proj-nav-center{font-family:'EB Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text);}
+    .proj-nav-all{font-size:.72rem;font-weight:300;letter-spacing:.08em;color:var(--muted);text-decoration:none;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif;transition:color .2s;}
+    .proj-nav-all:hover{color:var(--accent);}
+
+    /* Project body */
+    .proj-body{max-width:1080px;margin:0 auto;padding:4rem 3rem 6rem;}
+    .proj-meta-bar{display:flex;gap:3rem;flex-wrap:wrap;padding-bottom:2rem;border-bottom:1px solid var(--thin);margin-bottom:3rem;}
+    .proj-meta-item{display:flex;flex-direction:column;gap:.3rem;}
+    .proj-meta-lbl{font-size:.56rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);}
+    .proj-meta-val{font-family:'EB Garamond',serif;font-size:1rem;color:var(--text);}
+    .proj-meta-val.ph{color:var(--muted);font-style:italic;}
+    .proj-meta-link{font-family:'EB Garamond',serif;font-size:1rem;color:var(--accent);text-decoration:none;}
+    .proj-meta-link:hover{color:var(--hover);}
+    .proj-meta-link.ph{color:var(--muted);font-style:italic;pointer-events:none;}
+    .proj-logline{font-family:'EB Garamond',serif;font-size:clamp(1.15rem,2.5vw,1.65rem);font-style:italic;color:var(--text);line-height:1.55;margin-bottom:3rem;max-width:780px;}
+    .proj-logline.ph{color:var(--muted);}
+    .proj-two-col{display:grid;grid-template-columns:3fr 2fr;gap:5rem;align-items:start;}
+    .proj-section-lbl{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:300;display:block;margin-bottom:1.2rem;}
+    .proj-synopsis p{font-size:1rem;line-height:1.88;color:var(--muted);font-weight:300;margin-bottom:1.2rem;}
+    .proj-details-panel{background:var(--bg2);border:1px solid var(--thin);transition:background .6s,border-color .6s;}
+    .proj-detail-row{padding:.9rem 1.5rem;border-bottom:1px solid var(--thin);}
+    .proj-detail-row:last-child{border-bottom:none;}
+    .proj-detail-key{font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem;display:block;}
+    .proj-detail-val{font-family:'EB Garamond',serif;font-size:.95rem;color:var(--text);}
+    .proj-detail-val.ph{color:var(--muted);font-style:italic;}
+    .proj-detail-link{font-family:'EB Garamond',serif;font-size:.95rem;color:var(--accent);text-decoration:none;}
+    .proj-detail-link:hover{color:var(--hover);}
+    .proj-detail-link.ph{color:var(--muted);font-style:italic;pointer-events:none;}
+
+    /* Awards */
+    .proj-awards{margin-top:1.5rem;padding:1.5rem;background:var(--bg2);border:1px solid var(--thin);}
+    .proj-awards-list{list-style:none;display:flex;flex-direction:column;gap:.8rem;margin-top:1rem;}
+    .proj-awards-list li{display:flex;align-items:flex-start;gap:.8rem;font-size:.88rem;color:var(--muted);font-weight:300;line-height:1.5;}
+    .proj-awards-list li.ph{font-style:italic;}
+
+    /* Trailer */
+    .proj-trailer{margin-top:2rem;}
+    .proj-trailer-btn{display:inline-flex;align-items:center;gap:1rem;padding:1rem 1.8rem;background:var(--text);color:var(--bg);text-decoration:none;transition:background .2s;cursor:pointer;border:none;}
+    .proj-trailer-btn:hover{background:var(--accent);}
+    .proj-trailer-btn.ph{background:var(--bg3);border:1px solid var(--thin);cursor:default;}
+    .proj-trailer-btn.ph:hover{background:var(--bg3);}
+    .proj-play-sm{width:32px;height:32px;border-radius:50%;border:1px solid rgba(248,247,244,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .proj-play-sm::after{content:'';border-left:9px solid #F8F7F4;border-top:5.5px solid transparent;border-bottom:5.5px solid transparent;margin-left:3px;}
+    .ph .proj-play-sm{border-color:var(--thin);}
+    .ph .proj-play-sm::after{border-left-color:var(--muted);}
+    .proj-trailer-lbl{display:flex;flex-direction:column;}
+    .proj-trailer-lbl span:first-child{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(248,247,244,.5);}
+    .proj-trailer-lbl span:last-child{font-family:'EB Garamond',serif;font-size:1.1rem;color:#F8F7F4;}
+    .ph .proj-trailer-lbl span{color:var(--muted) !important;font-style:italic;}
+
+    /* Polaroid wall */
+    .proj-polaroids-section{margin-top:5rem;padding-top:3rem;border-top:1px solid var(--thin);}
+    .polaroid-wall{display:flex;flex-wrap:wrap;gap:1.5rem;padding:2rem 1rem 3rem;justify-content:center;background:var(--bg2);border:1px solid var(--thin);margin-top:1.5rem;}
+    .pol-card{background:#faf8f2;padding:10px 10px 44px;border:1px solid #e8e2d4;cursor:pointer;transition:transform .3s cubic-bezier(.25,.46,.45,.94),box-shadow .3s;position:relative;flex-shrink:0;}
+    body.night .pol-card{background:#1e1e18;border-color:#2a2a22;}
+    .pol-card:nth-child(1){transform:rotate(-2.5deg);}
+    .pol-card:nth-child(2){transform:rotate(1.8deg);}
+    .pol-card:nth-child(3){transform:rotate(-1.2deg);}
+    .pol-card:nth-child(4){transform:rotate(2.4deg);}
+    .pol-card:nth-child(5){transform:rotate(-1.8deg);}
+    .pol-card:nth-child(6){transform:rotate(1.2deg);}
+    .pol-card:nth-child(1):hover{transform:rotate(-2.5deg) scale(1.06);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+    .pol-card:nth-child(2):hover{transform:rotate(1.8deg) scale(1.06);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+    .pol-card:nth-child(3):hover{transform:rotate(-1.2deg) scale(1.06);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+    .pol-card:nth-child(4):hover{transform:rotate(2.4deg) scale(1.06);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+    .pol-card:nth-child(5):hover{transform:rotate(-1.8deg) scale(1.06);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+    .pol-card:nth-child(6):hover{transform:rotate(1.2deg) scale(1.06);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+    .pol-img{width:180px;height:160px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);background-size:cover;background-position:center;}
+    .pol-caption{position:absolute;bottom:8px;left:0;right:0;text-align:center;font-family:'Caveat',cursive;font-size:1.05rem;color:var(--muted);padding:0 8px;}
+
+    /* Back link */
+    .proj-back{display:inline-flex;align-items:center;gap:.6rem;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;margin-top:4rem;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif;}
+    .proj-back:hover{color:var(--accent);}
+
+    /* Lightbox */
+    #lb{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:3000;display:none;align-items:center;justify-content:center;}
+    #lb.open{display:flex;}
+    #lb img{max-width:90vw;max-height:88vh;object-fit:contain;}
+    #lb-x{position:absolute;top:1.5rem;right:2rem;color:#fff;font-size:2rem;cursor:pointer;opacity:.6;font-family:'EB Garamond',serif;line-height:1;}
+    #lb-x:hover{opacity:1;}
+    #lb-p,#lb-n{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:2.5rem;cursor:pointer;opacity:.45;font-family:'EB Garamond',serif;padding:1rem;line-height:1;}
+    #lb-p{left:.5rem;}#lb-n{right:.5rem;}
+    #lb-p:hover,#lb-n:hover{opacity:.9;}
+    #lb-ph{width:60vw;max-width:700px;height:65vh;background:var(--bg3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:rgba(255,255,255,.25);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;}
+
+    /* Responsive */
+    @media(max-width:768px){
+      nav{padding:0 1rem;}.nav-left,.nav-right{display:none;}.nav-center{grid-column:1/-1;}
+      #about,#gallery,#contact,#commentary{padding:4rem 1.5rem;}
+      .about-layout{grid-template-columns:1fr;gap:2.5rem;}
+      .p-grid{grid-template-columns:1fr;}
+      .masonry{columns:2;}
+      .contact-layout{grid-template-columns:1fr;gap:3rem;}
+      footer{flex-direction:column;gap:1rem;text-align:center;}
+      .disc-btn{padding:.9rem 1.2rem;font-size:.6rem;}
+      .proj-hero{height:50vh;}
+      .proj-hero-title{padding:0 1.5rem 2rem;}
+      .proj-body{padding:3rem 1.5rem 4rem;}
+      .proj-two-col{grid-template-columns:1fr;gap:2.5rem;}
+      .pol-img{width:140px;height:120px;}
+      .proj-nav{padding:0 1rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <button id="mood">&#9728;&#65039;</button>
+  <div id="prog"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-left">
+      <a href="#hero-wrap">home</a>
+      <a href="#about">about</a>
+      <a href="#portfolio">work</a>
+    </div>
+    <div class="nav-center"><a href="#hero-wrap" id="nav-name"></a></div>
+    <div class="nav-right">
+      <a href="#gallery">gallery</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero-wrap">
+    <div id="hero-sticky">
+      <div class="hero-photo">
+        <div class="hero-photo-inner" id="hero-inner">
+          <div class="hero-placeholder" id="hero-placeholder">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M6 21c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
+            <p>add heroPhoto in config</p>
+          </div>
+        </div>
+        <div id="disc-tint"></div>
+        <div id="scroll-hint">
+          <div class="s-mouse"><div class="s-dot"></div></div>
+          <span>scroll</span>
+        </div>
+      </div>
+      <div class="hero-name-block" id="hero-name-block">
+        <h1 id="hero-h1"></h1>
+        <p class="hero-tagline" id="hero-tagline"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCIPLINE SWITCHER -->
+  <div id="disc-switcher">
+    <button class="disc-btn active" data-disc="all">All</button>
+    <button class="disc-btn" data-disc="actor">Actor</button>
+    <button class="disc-btn" data-disc="director">Director</button>
+    <button class="disc-btn" data-disc="producer">Producer</button>
+    <button class="disc-btn" data-disc="dancer">Dancer</button>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-layout">
+      <div class="reveal from-left">
+        <div class="about-img-box" id="about-img-box">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M6 21c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
+          add aboutPhoto in config
+        </div>
+        <p class="about-caption" id="about-caption"></p>
+      </div>
+      <div class="about-body">
+        <span class="eyebrow reveal d1">about</span>
+        <h2 class="heading reveal d2">a storyteller<br><em>at heart</em></h2>
+        <div class="disc-panel active" id="bio-all"></div>
+        <div class="disc-panel" id="bio-actor"></div>
+        <div class="disc-panel" id="bio-director"></div>
+        <div class="disc-panel" id="bio-producer"></div>
+        <div class="disc-panel" id="bio-dancer"></div>
+        <div class="rule reveal"></div>
+        <div class="meta reveal">
+          <div class="meta-row"><span class="meta-k">Based in</span><span class="meta-v" id="meta-location"></span></div>
+          <div class="meta-row"><span class="meta-k">From</span><span class="meta-v" id="meta-from"></span></div>
+          <div class="meta-row"><span class="meta-k">Craft</span><span class="meta-v" id="meta-craft"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="wrap">
+      <span class="eyebrow reveal">work</span>
+      <h2 class="heading reveal d1">selected <em>projects</em></h2>
+    </div>
+    <div class="p-grid" id="p-grid"></div>
+    <div class="wrap">
+      <a class="showreel-bar reveal" id="showreel-link" href="#" target="_blank">
+        <div class="sr-l">
+          <div class="play-circle"></div>
+          <div class="sr-txt"><span>Watch</span><span>My Showreel</span></div>
+        </div>
+        <div class="sr-arr">&#8594;</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap" style="padding-bottom:2rem;">
+      <span class="eyebrow reveal">gallery</span>
+      <h2 class="heading reveal d1">moments <em>&amp; stills</em></h2>
+    </div>
+    <div class="masonry" id="masonry"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-layout">
+      <div class="contact-left">
+        <span class="eyebrow reveal">contact</span>
+        <h2 class="heading reveal d1">let's create<br><em>together</em></h2>
+        <p class="reveal d2" id="contact-intro"></p>
+        <div class="c-links reveal d3">
+          <div class="c-row"><span class="c-key">email</span><span class="c-val" id="c-email"></span></div>
+          <div class="c-row"><span class="c-key">location</span><span class="c-val" id="c-location"></span></div>
+          <div class="c-row"><span class="c-key">instagram</span><span class="c-val" id="c-instagram"></span></div>
+          <div class="c-row"><span class="c-key">imdb</span><span class="c-val" id="c-imdb"></span></div>
+        </div>
+      </div>
+      <form class="contact-form reveal d2" onsubmit="return false;">
+        <div class="f-field"><label>name</label><input type="text" placeholder="Your name"/></div>
+        <div class="f-field"><label>email</label><input type="email" placeholder="your@email.com"/></div>
+        <div class="f-field"><label>message</label><textarea rows="5" placeholder="Tell me about your project..."></textarea></div>
+        <button class="btn" type="submit">send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- COMMENTARY -->
+  <section id="commentary">
+    <div class="commentary-inner reveal">
+      <span class="commentary-label">director's commentary</span>
+      <span class="commentary-note" id="commentary-text"></span>
+      <span class="commentary-sig" id="commentary-sig"></span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a class="f-name" href="#hero-wrap" id="footer-name"></a>
+    <span class="f-copy" id="footer-copy"></span>
+    <div class="f-social">
+      <a href="#" id="s-instagram">instagram</a>
+      <a href="#" id="s-imdb">imdb</a>
+      <a href="#" id="s-youtube">youtube</a>
+      <a href="#" id="s-linkedin">linkedin</a>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       TYPEWRITER SCREEN (shown before project detail)
+  ===================================================== -->
+  <div id="tw-screen">
+    <div id="tw-wordmark" id="tw-wordmark"></div>
+    <div id="tw-box">
+      <span class="tw-eyebrow" id="tw-eyebrow"></span>
+      <div id="tw-title"><span id="tw-text"></span><span id="tw-cursor"></span></div>
+      <div id="tw-sub"></div>
+    </div>
+    <button class="tw-skip" id="tw-skip">skip &rarr;</button>
+    <div id="tw-progress"></div>
+  </div>
+
+  <!-- =====================================================
+       PROJECT DETAIL OVERLAY
+  ===================================================== -->
+  <div id="project-overlay">
+    <div class="proj-nav">
+      <button class="proj-nav-back" id="proj-back-top">&#8592; back</button>
+      <span class="proj-nav-center" id="proj-wordmark"></span>
+      <button class="proj-nav-all" id="proj-all-work">all work</button>
+    </div>
+
+    <div class="proj-hero" id="proj-hero">
+      <div class="proj-hero-overlay"></div>
+      <div class="proj-hero-ph" id="proj-hero-ph">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.7"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M6 21c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
+        <p>add image to project config</p>
+      </div>
+      <div class="proj-hero-title">
+        <span class="proj-hero-cat" id="proj-h-cat"></span>
+        <h1 class="proj-hero-name" id="proj-h-title"></h1>
+      </div>
+    </div>
+
+    <div class="proj-body">
+      <div class="proj-meta-bar">
+        <div class="proj-meta-item"><span class="proj-meta-lbl">Year</span><span class="proj-meta-val" id="pm-year"></span></div>
+        <div class="proj-meta-item"><span class="proj-meta-lbl">Role</span><span class="proj-meta-val" id="pm-role"></span></div>
+        <div class="proj-meta-item"><span class="proj-meta-lbl">Director</span><span class="proj-meta-val" id="pm-dir"></span></div>
+        <div class="proj-meta-item"><span class="proj-meta-lbl">Producer</span><span class="proj-meta-val" id="pm-prod"></span></div>
+        <div class="proj-meta-item"><span class="proj-meta-lbl">IMDb</span><a class="proj-meta-link" id="pm-imdb" href="#" target="_blank">view on IMDb &#8599;</a></div>
+      </div>
+
+      <p class="proj-logline" id="proj-logline"></p>
+
+      <div class="proj-two-col">
+        <div class="proj-synopsis">
+          <span class="proj-section-lbl">synopsis</span>
+          <div id="proj-synopsis"></div>
+        </div>
+        <div>
+          <span class="proj-section-lbl">project details</span>
+          <div class="proj-details-panel">
+            <div class="proj-detail-row"><span class="proj-detail-key">Category</span><span class="proj-detail-val" id="pd-cat"></span></div>
+            <div class="proj-detail-row"><span class="proj-detail-key">Year</span><span class="proj-detail-val" id="pd-year"></span></div>
+            <div class="proj-detail-row"><span class="proj-detail-key">Role</span><span class="proj-detail-val" id="pd-role"></span></div>
+            <div class="proj-detail-row"><span class="proj-detail-key">Director</span><span class="proj-detail-val" id="pd-dir"></span></div>
+            <div class="proj-detail-row"><span class="proj-detail-key">Producer</span><span class="proj-detail-val" id="pd-prod"></span></div>
+            <div class="proj-detail-row"><span class="proj-detail-key">IMDb</span><a class="proj-detail-link" id="pd-imdb" href="#" target="_blank">view on IMDb &#8599;</a></div>
+          </div>
+
+          <div class="proj-awards" style="margin-top:1.5rem;">
+            <span class="proj-section-lbl">awards &amp; recognition</span>
+            <ul class="proj-awards-list" id="proj-awards"></ul>
+          </div>
+
+          <div class="proj-trailer">
+            <span class="proj-section-lbl" style="margin-bottom:.8rem;">trailer</span>
+            <a id="proj-trailer-btn" href="#" class="proj-trailer-btn" target="_blank">
+              <div class="proj-play-sm"></div>
+              <div class="proj-trailer-lbl"><span>Watch</span><span id="proj-trailer-lbl-val">Trailer</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-polaroids-section">
+        <span class="proj-section-lbl">stills</span>
+        <div class="polaroid-wall" id="pol-wall"></div>
+      </div>
+
+      <button class="proj-back" id="proj-back-bottom">&#8592; &nbsp;back to all work</button>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lb">
+    <div id="lb-x">&#215;</div>
+    <div id="lb-p">&#8592;</div>
+    <div id="lb-c"></div>
+    <div id="lb-n">&#8594;</div>
+  </div>
+
+  <script>
+    var C = CONFIG;
+
+    /* ── APPLY CONFIG TO MAIN SITE ── */
+    document.getElementById('nav-name').textContent       = C.name;
+    document.getElementById('footer-name').textContent    = C.name;
+    document.getElementById('footer-copy').textContent    = '\u00a9 ' + C.copyrightYear + ' ' + C.name.split(' ').map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ');
+    document.getElementById('tw-wordmark').textContent    = C.name;
+    document.getElementById('proj-wordmark').textContent  = C.name;
+    document.getElementById('s-instagram').href           = C.links.instagram;
+    document.getElementById('s-imdb').href                = C.links.imdb;
+    document.getElementById('s-youtube').href             = C.links.youtube;
+    document.getElementById('s-linkedin').href            = C.links.linkedin;
+    document.getElementById('showreel-link').href         = C.showreelUrl || '#';
+
+    var parts = C.name.split(' ');
+    document.getElementById('hero-h1').innerHTML = parts[0] + (parts[1] ? ' <em>'+parts.slice(1).join(' ')+'</em>' : '');
+    document.getElementById('hero-tagline').textContent = C.tagline;
+
+    if(C.heroPhoto){
+      var hi = document.getElementById('hero-inner');
+      hi.style.backgroundImage = "url('"+C.heroPhoto+"')";
+      hi.style.backgroundSize = 'cover';
+      document.getElementById('hero-placeholder').style.display = 'none';
+    }
+
+    document.getElementById('about-caption').textContent = C.name + ' \u2014 ' + C.location.split(',')[0].toLowerCase();
+    if(C.aboutPhoto){
+      var ab = document.getElementById('about-img-box');
+      ab.style.backgroundImage = "url('"+C.aboutPhoto+"')";
+      ab.innerHTML = '';
+    }
+    document.getElementById('meta-location').textContent = C.location;
+    document.getElementById('meta-from').textContent     = C.from;
+    document.getElementById('meta-craft').textContent    = C.craft;
+
+    var allBio = document.getElementById('bio-all');
+    C.bio.all.forEach(function(t,i){
+      var p = document.createElement('p');
+      p.className = 'reveal d'+(i+3);
+      p.textContent = t;
+      allBio.appendChild(p);
+    });
+    ['actor','director','producer','dancer'].forEach(function(d){
+      var el = document.getElementById('bio-'+d);
+      var p = document.createElement('p');
+      p.textContent = C.bio[d];
+      el.appendChild(p);
+    });
+
+    document.getElementById('contact-intro').textContent = C.contactIntro;
+    document.getElementById('c-email').textContent       = C.email;
+    document.getElementById('c-location').textContent    = C.location;
+    document.getElementById('c-instagram').textContent   = C.instagram;
+    document.getElementById('c-imdb').textContent        = C.imdb;
+    document.getElementById('commentary-text').textContent = C.commentary;
+    document.getElementById('commentary-sig').textContent  = C.commentarySig;
+
+    /* Portfolio cards */
+    var delays = ['','d1','d2','d3'];
+    var grid = document.getElementById('p-grid');
+    C.projects.forEach(function(proj, i){
+      var w = document.createElement('div');
+      w.className = 'p-card-wrap';
+      var hasImg = proj.image ? 'background-image:url(\''+proj.image+'\');' : '';
+      var ph = proj.image ? '' : '<div class="flip-front-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M6 21c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>add image in config</div>';
+      w.innerHTML =
+        '<div class="flip-card reveal scale-up '+delays[i]+'" data-disc="'+proj.discipline+'">'+
+          '<div class="flip-inner">'+
+            '<div class="flip-front" style="'+hasImg+'">'+ph+'</div>'+
+            '<div class="flip-back">'+
+              '<div class="fb-tag">'+proj.category+' &#183; Behind the scenes</div>'+
+              '<div class="fb-title">'+proj.title+'</div>'+
+              '<div class="fb-story">'+proj.backStory+'</div>'+
+              '<div class="fb-year">'+proj.year+'</div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+        '<div class="p-card-info">'+
+          '<div class="p-cat">'+proj.category+'</div>'+
+          '<div class="p-title">'+proj.title+'</div>'+
+          '<div class="p-year">'+proj.year+'</div>'+
+          '<div class="view-link">view project &#8594;</div>'+
+        '</div>';
+      (function(idx){
+        w.addEventListener('click', function(){ openProject(idx); });
+      })(i);
+      grid.appendChild(w);
+    });
+
+    /* Gallery */
+    var sizes = ['tall','med','short','med','tall','short','med','tall','med'];
+    var rdirs  = ['from-left','','','from-left d1','d2','','from-left','d1',''];
+    var masonry = document.getElementById('masonry');
+    C.gallery.forEach(function(img, i){
+      var item = document.createElement('div');
+      item.className = 'g-item reveal '+rdirs[i];
+      var ph = document.createElement('div');
+      ph.className = 'g-ph '+sizes[i];
+      if(img){ ph.style.backgroundImage = "url('"+img+"')"; }
+      else { ph.textContent = 'photo '+(i+1); }
+      item.appendChild(ph);
+      masonry.appendChild(item);
+    });
+
+    /* ── SCROLL ── */
+    var prog = document.getElementById('prog');
+    var heroWrap = document.getElementById('hero-wrap');
+    var heroInner = document.getElementById('hero-inner');
+    var heroNameBlock = document.getElementById('hero-name-block');
+    var hint = document.getElementById('scroll-hint');
+
+    function clamp(v,lo,hi){return Math.min(hi,Math.max(lo,v));}
+
+    function onScroll(){
+      var sy = window.scrollY, mx = document.body.scrollHeight - window.innerHeight;
+      prog.style.width = (sy/mx*100)+'%';
+      var hH = heroWrap.offsetHeight, hV = window.innerHeight-58;
+      var hp = clamp(sy/(hH-hV),0,1);
+      heroInner.style.transform = 'scale('+(1+hp*.08)+')';
+      heroNameBlock.style.transform = 'translateY('+(hp*-24)+'px)';
+      heroNameBlock.style.opacity = String(1-hp*1.4);
+      hint.style.opacity = String(1-hp*5);
+    }
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    /* Reveal observer */
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
+    },{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+    /* Mood */
+    document.getElementById('mood').addEventListener('click', function(){
+      var n = document.body.classList.toggle('night');
+      this.innerHTML = n ? '&#127769;' : '&#9728;&#65039;';
+    });
+
+    /* Discipline switcher */
+    var tints  = {all:{c:'transparent',o:0,t:C.tagline},actor:{c:'rgba(40,60,40,.35)',o:1,t:'Actor'},director:{c:'rgba(20,30,50,.35)',o:1,t:'Director'},producer:{c:'rgba(50,35,20,.3)',o:1,t:'Producer'},dancer:{c:'rgba(50,20,40,.3)',o:1,t:'Dancer'}};
+    var crafts = {all:C.craft,actor:'Acting',director:'Directing',producer:'Producing',dancer:'Dance'};
+    var discTint = document.getElementById('disc-tint');
+    var taglineEl = document.getElementById('hero-tagline');
+    var metaCraft = document.getElementById('meta-craft');
+    document.querySelectorAll('.disc-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var d = btn.getAttribute('data-disc');
+        document.querySelectorAll('.disc-btn').forEach(function(b){b.classList.remove('active');});
+        btn.classList.add('active');
+        document.querySelectorAll('.disc-panel').forEach(function(p){p.classList.remove('active');});
+        var panel = document.getElementById('bio-'+d);
+        if(panel) panel.classList.add('active');
+        var t = tints[d]||tints.all;
+        discTint.style.background = t.c;
+        discTint.style.opacity    = t.o;
+        taglineEl.textContent     = t.t;
+        metaCraft.textContent     = crafts[d]||crafts.all;
+        document.querySelectorAll('.flip-card').forEach(function(card){
+          card.parentElement.style.display = (d==='all'||card.getAttribute('data-disc')===d)?'':'none';
+        });
+      });
+    });
+
+    /* ── PROJECT OVERLAY ── */
+    var twScreen   = document.getElementById('tw-screen');
+    var projOverlay = document.getElementById('project-overlay');
+    var curStills  = [];
+    var curLb      = 0;
+    var twTyping   = false;
+
+    function openProject(idx){
+      var P = C.projects[idx];
+      document.body.style.overflow = 'hidden';
+
+      /* --- Typewriter --- */
+      var twEyebrow = document.getElementById('tw-eyebrow');
+      var twText    = document.getElementById('tw-text');
+      var twSub     = document.getElementById('tw-sub');
+      var twProg    = document.getElementById('tw-progress');
+      twEyebrow.textContent = P.category + ' \u00b7 ' + P.year;
+      twText.textContent    = '';
+      twSub.textContent     = '';
+      twSub.classList.remove('show');
+      twProg.style.width    = '0%';
+
+      twScreen.classList.add('active');
+      requestAnimationFrame(function(){
+        requestAnimationFrame(function(){
+          twScreen.classList.add('visible');
+        });
+      });
+
+      twTyping = true;
+      var charIdx = 0;
+      var title   = P.title;
+
+      function typeChar(){
+        if(!twTyping) return;
+        if(charIdx < title.length){
+          twText.textContent += title[charIdx];
+          charIdx++;
+          twProg.style.width = (charIdx/title.length*100)+'%';
+          var delay = title[charIdx-1]===' ' ? 110 : 50+Math.random()*40;
+          setTimeout(typeChar, delay);
+        } else {
+          twSub.textContent = 'Actor \u00b7 Producer';
+          twSub.classList.add('show');
+          setTimeout(function(){ showProjectDetail(P); }, 1400);
+        }
+      }
+      setTimeout(typeChar, 700);
+
+      document.getElementById('tw-skip').onclick = function(){ showProjectDetail(P); };
+    }
+
+    function showProjectDetail(P){
+      twTyping = false;
+      twScreen.classList.add('fade-out');
+      setTimeout(function(){
+        twScreen.classList.remove('active','visible','fade-out');
+        twScreen.style.removeProperty('opacity');
+      }, 600);
+
+      /* populate project */
+      populateProject(P);
+
+      projOverlay.classList.add('active');
+      projOverlay.scrollTop = 0;
+      requestAnimationFrame(function(){
+        requestAnimationFrame(function(){
+          projOverlay.classList.add('visible');
+        });
+      });
+    }
+
+    function closeProject(){
+      projOverlay.classList.remove('visible');
+      setTimeout(function(){
+        projOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }, 600);
+    }
+
+    document.getElementById('proj-back-top').addEventListener('click',    closeProject);
+    document.getElementById('proj-back-bottom').addEventListener('click',  closeProject);
+    document.getElementById('proj-all-work').addEventListener('click',    closeProject);
+
+    function populateProject(P){
+      /* hero */
+      var hero = document.getElementById('proj-hero');
+      hero.style.backgroundImage = P.image ? "url('"+P.image+"')" : '';
+      document.getElementById('proj-hero-ph').style.display = P.image ? 'none' : '';
+      document.getElementById('proj-h-cat').textContent = P.category + ' \u00b7 ' + P.year;
+      var words = P.title.split(' ');
+      document.getElementById('proj-h-title').innerHTML =
+        words.slice(0,-1).join(' ') + (words.length>1 ? ' <em>'+words.slice(-1)[0]+'</em>' : words[0]);
+
+      /* meta bar */
+      function setVal(id, val, fallback, isLink){
+        var el = document.getElementById(id);
+        if(!el) return;
+        if(isLink){
+          if(val){ el.href=val; el.classList.remove('ph'); el.textContent='view on IMDb \u2199'; }
+          else { el.classList.add('ph'); el.textContent=fallback||'add imdbUrl in config'; el.removeAttribute('href'); }
+        } else {
+          el.textContent = val || fallback || 'add in config';
+          val ? el.classList.remove('ph') : el.classList.add('ph');
+        }
+      }
+      setVal('pm-year', P.year,     'Year');
+      setVal('pm-role', P.role,     'Your role');
+      setVal('pm-dir',  P.director, 'Director name');
+      setVal('pm-prod', P.producer, 'Producer name');
+      setVal('pm-imdb', P.imdbUrl,  'add imdbUrl in config', true);
+
+      /* logline */
+      var logEl = document.getElementById('proj-logline');
+      logEl.textContent = P.logline || 'Add your logline in the config.';
+      P.logline ? logEl.classList.remove('ph') : logEl.classList.add('ph');
+
+      /* synopsis */
+      var synDiv = document.getElementById('proj-synopsis');
+      synDiv.innerHTML = '';
+      var synText = P.synopsis || 'Add your synopsis in the config.';
+      synText.split('\n\n').forEach(function(para){
+        var p = document.createElement('p');
+        p.textContent = para;
+        synDiv.appendChild(p);
+      });
+
+      /* details panel */
+      setVal('pd-cat',  P.category, 'Category');
+      setVal('pd-year', P.year,     'Year');
+      setVal('pd-role', P.role,     'Your role');
+      setVal('pd-dir',  P.director, 'Director name');
+      setVal('pd-prod', P.producer, 'Producer name');
+      setVal('pd-imdb', P.imdbUrl,  'add imdbUrl in config', true);
+
+      /* awards */
+      var aList   = document.getElementById('proj-awards');
+      aList.innerHTML = '';
+      var awards  = (P.awards||[]).filter(function(a){return a&&a.trim();});
+      var aSource = awards.length ? awards : ['Award Name \u2014 Festival Year','Add awards in the config'];
+      aSource.forEach(function(a, i){
+        var li = document.createElement('li');
+        if(!awards.length) li.classList.add('ph');
+        li.innerHTML = '<svg style="width:14px;height:14px;flex-shrink:0;margin-top:2px;" viewBox="0 0 24 24" fill="none" stroke="'+(awards.length?'var(--accent)':'var(--muted)')+'" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>' + a;
+        aList.appendChild(li);
+      });
+
+      /* trailer */
+      var tBtn = document.getElementById('proj-trailer-btn');
+      var tLbl = document.getElementById('proj-trailer-lbl-val');
+      if(P.trailerUrl){ tBtn.href=P.trailerUrl; tBtn.classList.remove('ph'); tLbl.textContent='Watch Trailer'; }
+      else { tBtn.classList.add('ph'); tBtn.style.cursor='default'; tBtn.removeAttribute('href'); tLbl.textContent='add trailerUrl in config'; }
+
+      /* polaroids */
+      var wall   = document.getElementById('pol-wall');
+      wall.innerHTML = '';
+      curStills  = (P.stills && P.stills.length) ? P.stills : ["","","","","",""];
+      var caps   = P.stillCaptions || ["day one","on set","behind the lens","wrap day","the cast","a moment"];
+      curStills.forEach(function(src, i){
+        var card = document.createElement('div');
+        card.className = 'pol-card';
+        var img = document.createElement('div');
+        img.className = 'pol-img';
+        if(src){ img.style.backgroundImage = "url('"+src+"')"; }
+        else { img.innerHTML = '<span style="font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;padding:8px;">still '+(i+1)+'<br><span style="opacity:.6;font-size:.45rem;">add url in<br>stills config</span></span>'; }
+        var cap = document.createElement('div');
+        cap.className = 'pol-caption';
+        cap.textContent = caps[i] || ('still '+(i+1));
+        card.appendChild(img);
+        card.appendChild(cap);
+        (function(idx){ card.addEventListener('click', function(){ curLb=idx; showLb(idx); document.getElementById('lb').classList.add('open'); }); })(i);
+        wall.appendChild(card);
+      });
+    }
+
+    /* Lightbox */
+    function showLb(i){
+      var c = document.getElementById('lb-c');
+      c.innerHTML = '';
+      var src = curStills[i];
+      if(src){ var el=document.createElement('img'); el.src=src; c.appendChild(el); }
+      else { var ph=document.createElement('div'); ph.id='lb-ph'; ph.innerHTML='<span>still '+(i+1)+'</span>'; c.appendChild(ph); }
+    }
+    document.getElementById('lb-x').onclick = function(){ document.getElementById('lb').classList.remove('open'); };
+    document.getElementById('lb-p').onclick = function(){ curLb=(curLb-1+curStills.length)%curStills.length; showLb(curLb); };
+    document.getElementById('lb-n').onclick = function(){ curLb=(curLb+1)%curStills.length; showLb(curLb); };
+    document.getElementById('lb').addEventListener('click', function(e){ if(e.target===this) this.classList.remove('open'); });
+    document.addEventListener('keydown', function(e){
+      var lb=document.getElementById('lb');
+      if(!lb.classList.contains('open')) return;
+      if(e.key==='ArrowLeft')  document.getElementById('lb-p').click();
+      if(e.key==='ArrowRight') document.getElementById('lb-n').click();
+      if(e.key==='Escape')     lb.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

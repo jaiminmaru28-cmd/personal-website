@@ -57,7 +57,7 @@ var CONFIG = {
    │  PHOTOS  (format: "images/filename.jpg")                     │
    └────────────────────────────────────────────────────────────── */
 
-  heroPhoto:  "images/hero_image.jpg",
+  heroPhoto:  "",
   aboutPhoto: "",
 
 /* ┌──────────────────────────────────────────────────────────────┐
@@ -252,7 +252,8 @@ var CONFIG = {
     /* HERO */
     #hero-wrap{position:relative;height:100vh;min-height:500px;overflow:hidden;margin-top:0;}
     .hero-photo{position:absolute;inset:0;}
-    .hero-photo-inner{position:absolute;inset:0;background:#c5c8c4;background-size:cover;background-position:center center;display:flex;align-items:center;justify-content:center;transition:filter .8s;}
+    .hero-photo-inner{position:absolute;inset:0;background:#c5c8c4;display:flex;align-items:center;justify-content:center;transition:filter .8s;overflow:hidden;}
+    .hero-photo-inner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block;}
     body.night .hero-photo-inner{filter:brightness(.5) saturate(.6) hue-rotate(160deg);}
     .hero-placeholder{display:flex;flex-direction:column;align-items:center;gap:1rem;color:rgba(0,0,0,.28);}
     .hero-placeholder svg{opacity:.25;}
@@ -809,8 +810,10 @@ var CONFIG = {
 
     if(C.heroPhoto){
       var hi = document.getElementById('hero-inner');
-      hi.style.backgroundImage = "url('"+C.heroPhoto+"')";
-      hi.style.backgroundSize = 'cover';
+      var img = document.createElement('img');
+      img.src = C.heroPhoto;
+      img.alt = C.name;
+      hi.appendChild(img);
       document.getElementById('hero-placeholder').style.display = 'none';
     }
 

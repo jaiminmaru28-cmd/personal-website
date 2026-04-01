@@ -57,7 +57,7 @@ var CONFIG = {
    │  PHOTOS  (format: "images/filename.jpg")                     │
    └────────────────────────────────────────────────────────────── */
 
-  heroPhoto:  "images/hero_image.jpg",
+  heroPhoto:  "",
   aboutPhoto: "",
 
 /* ┌──────────────────────────────────────────────────────────────┐
@@ -250,16 +250,15 @@ var CONFIG = {
     #prog{position:fixed;top:58px;left:0;height:2px;width:0%;background:var(--accent);z-index:600;}
 
     /* HERO */
-    #hero-wrap{margin-top:58px;position:relative;height:250vh;}
-    #hero-sticky{position:sticky;top:0;height:calc(100vh - 58px);overflow:hidden;display:flex;flex-direction:column;}
-    .hero-photo{flex:1;overflow:hidden;position:relative;}
-    .hero-photo-inner{position:absolute;inset:-5%;background:#c5c8c4;background-size:cover;background-position:center top;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;transition:filter .8s;}
+    #hero-wrap{position:relative;height:100vh;min-height:500px;overflow:hidden;margin-top:0;}
+    .hero-photo{position:absolute;inset:0;}
+    .hero-photo-inner{position:absolute;inset:0;background:#c5c8c4;background-size:cover;background-position:center center;display:flex;align-items:center;justify-content:center;transition:filter .8s;}
     body.night .hero-photo-inner{filter:brightness(.5) saturate(.6) hue-rotate(160deg);}
     .hero-placeholder{display:flex;flex-direction:column;align-items:center;gap:1rem;color:rgba(0,0,0,.28);}
     .hero-placeholder svg{opacity:.25;}
     .hero-placeholder p{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;}
     #disc-tint{position:absolute;inset:0;opacity:0;transition:opacity .5s,background .5s;pointer-events:none;}
-    #scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;}
+    #scroll-hint{position:absolute;bottom:8rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;z-index:2;}
     #scroll-hint span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(0,0,0,.32);font-weight:300;}
     body.night #scroll-hint span{color:rgba(255,255,255,.32);}
     .s-mouse{width:22px;height:34px;border:1.5px solid rgba(0,0,0,.25);border-radius:12px;display:flex;justify-content:center;padding-top:5px;}
@@ -267,7 +266,7 @@ var CONFIG = {
     .s-dot{width:3px;height:6px;background:rgba(0,0,0,.32);border-radius:2px;animation:bounce 1.6s ease-in-out infinite;}
     body.night .s-dot{background:rgba(255,255,255,.32);}
     @keyframes bounce{0%{transform:translateY(0);opacity:1;}60%{transform:translateY(10px);opacity:0;}61%{transform:translateY(0);opacity:0;}100%{opacity:1;}}
-    .hero-name-block{text-align:center;padding:2rem 1rem 1.5rem;border-top:1px solid var(--thin);background:var(--bg);will-change:transform,opacity;transition:background .6s,border-color .6s;}
+    .hero-name-block{position:absolute;bottom:0;left:0;right:0;text-align:center;padding:2rem 1rem 1.5rem;border-top:1px solid var(--thin);background:var(--bg);transition:background .6s,border-color .6s;}
     .hero-name-block h1{font-family:'EB Garamond',serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:400;letter-spacing:.01em;color:var(--text);line-height:1.1;}
     .hero-name-block h1 em{font-style:italic;color:var(--accent);}
     .hero-tagline{margin-top:.6rem;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:300;}
@@ -567,24 +566,22 @@ var CONFIG = {
 
   <!-- HERO -->
   <div id="hero-wrap">
-    <div id="hero-sticky">
-      <div class="hero-photo">
-        <div class="hero-photo-inner" id="hero-inner">
-          <div class="hero-placeholder" id="hero-placeholder">
-            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M6 21c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
-            <p>add heroPhoto in config</p>
-          </div>
-        </div>
-        <div id="disc-tint"></div>
-        <div id="scroll-hint">
-          <div class="s-mouse"><div class="s-dot"></div></div>
-          <span>scroll</span>
+    <div class="hero-photo">
+      <div class="hero-photo-inner" id="hero-inner">
+        <div class="hero-placeholder" id="hero-placeholder">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M6 21c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
+          <p>add heroPhoto in config</p>
         </div>
       </div>
-      <div class="hero-name-block" id="hero-name-block">
-        <h1 id="hero-h1"></h1>
-        <p class="hero-tagline" id="hero-tagline"></p>
+      <div id="disc-tint"></div>
+      <div id="scroll-hint">
+        <div class="s-mouse"><div class="s-dot"></div></div>
+        <span>scroll</span>
       </div>
+    </div>
+    <div class="hero-name-block" id="hero-name-block">
+      <h1 id="hero-h1"></h1>
+      <p class="hero-tagline" id="hero-tagline"></p>
     </div>
   </div>
 
@@ -898,22 +895,13 @@ var CONFIG = {
 
     /* ── SCROLL ── */
     var prog = document.getElementById('prog');
-    var heroWrap = document.getElementById('hero-wrap');
-    var heroInner = document.getElementById('hero-inner');
-    var heroNameBlock = document.getElementById('hero-name-block');
     var hint = document.getElementById('scroll-hint');
-
-    function clamp(v,lo,hi){return Math.min(hi,Math.max(lo,v));}
 
     function onScroll(){
       var sy = window.scrollY, mx = document.body.scrollHeight - window.innerHeight;
       prog.style.width = (sy/mx*100)+'%';
-      var hH = heroWrap.offsetHeight, hV = window.innerHeight-58;
-      var hp = clamp(sy/(hH-hV),0,1);
-      heroInner.style.transform = 'scale('+(1+hp*.08)+')';
-      heroNameBlock.style.transform = 'translateY('+(hp*-24)+'px)';
-      heroNameBlock.style.opacity = String(1-hp*1.4);
-      hint.style.opacity = String(1-hp*5);
+      /* fade scroll hint as user scrolls */
+      hint.style.opacity = String(Math.max(0, 1 - sy/120));
     }
     window.addEventListener('scroll', onScroll, {passive:true});
     onScroll();
